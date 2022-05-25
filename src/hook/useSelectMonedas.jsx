@@ -2,10 +2,10 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Label = styled.label`
-  color: white;
+  color: #fff;
 `;
 const useSelectMonedas = (label, opciones) => {
-  const SelectMonedas = () => {
+  const SelectMonedas = () => (
     <>
       <Label>{label}</Label>
       <select>
@@ -16,8 +16,8 @@ const useSelectMonedas = (label, opciones) => {
           </option>
         ))}
       </select>
-    </>;
-  };
+    </>
+  );
   return [SelectMonedas];
 };
 
