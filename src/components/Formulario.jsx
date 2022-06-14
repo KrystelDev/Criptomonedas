@@ -22,7 +22,7 @@ const InputSubmit = styled.input`
   }
 `;
 
-const Formulario = () => {
+const Formulario = ({ setMonedas }) => {
   const [criptos, setCriptos] = useState([]);
   const [error, setError] = useState(false);
 
@@ -62,8 +62,7 @@ const Formulario = () => {
     }
 
     setError(false);
-
-    console.log("conectado");
+    setMonedas({ moneda, criptomoneda });
   };
 
   return (
@@ -72,8 +71,6 @@ const Formulario = () => {
       <form onSubmit={handelSubmit}>
         <SelectMonedas />
         <SelectCriptomoneda />
-        {/* {(moneda, criptomoneda)} */}
-
         <InputSubmit type={"submit"} value={"Cotizar"} />
       </form>
     </>
