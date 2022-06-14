@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import ImagenCripto from "./img/imagen-criptos.png";
 import Formulario from "./components/Formulario";
 import Resultados from "./components/Resultados";
+import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 
 const Contenedor = styled.div`
@@ -73,6 +74,7 @@ function App() {
           {resultado.PRICE && <Resultados resultado={resultado} />}
         </div>
       </Contenedor>
+      <Footer />
     </>
   );
 }
