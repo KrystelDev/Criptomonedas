@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 const FooterFlex = styled.div`
   bottom: 0;
   display: flex;
+  align-items: center;
   text-shadow: 0 0 0.02rem black, 0 0 0.8rem white;
   font-weight: bold;
   justify-content: space-between;
